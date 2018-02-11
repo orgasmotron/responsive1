@@ -1,0 +1,113 @@
+/*------------------------------RESET DEFAULT STYLES--------------------------------*/
+/*----------------------------------------------------------------------------------*/
+html,body                       { width:100%; height:100%; -webkit-text-size-adjust:none !important;}
+body                            { padding:0; margin:0; font:16px Roboto; color:#888888; line-height: 1.5; background: #fff;}
+div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,input,textarea,header, nav, section, article, aside, footer, blockquote {
+	padding:0;
+	margin:0;
+	outline:none;
+	list-style:none;
+
+	-webkit-box-sizing: border-box;
+
+	        box-sizing: border-box;
+ 	-moz-box-sizing: border-box;
+}
+header, nav, section, article, aside, footer {
+	display: block
+}
+select, input, textarea        {  font: 16px Roboto; color: #c6a254; vertical-align:middle; }
+textarea                       { vertical-align:top; resize:none;}
+:focus                         { outline:none; }
+input[type=submit], button     { cursor:pointer; }
+img, fieldset                  { border:0; }
+table                          { border-collapse:collapse; border-spacing:0; }
+a                              { font: 16px Roboto; color: #58595b; text-decoration:none !important; -webkit-transition:0.3s; transition: 0.3s; }
+a:hover                        { text-decoration:none !important;}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------DEFAULT CLASSES------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.float-r           	           { float:right !important; }
+.float-l                       { float:left !important; }
+.no-float                      { float:none !important; }
+.no-border                     { border:0 !important; }
+.no-bg                         { background:none !important; }
+.no-margin                     { margin:0 !important; }
+.no-padding                    { padding:0 !important; }
+.no-display                    { display:none !important; }
+.display                       { display:block !important; }
+.inline                        { display:inline !important; }
+.overflow                      { overflow:hidden !important; }
+.align-r                       { text-align:right !important; }
+.align-l                       { text-align:left !important; }
+.align-c                       { text-align:center !important; }
+.clear                         { clear:both; }
+.middle                        { position: relativ; top:50%; -webkit-transform: translate3d(-50%); transform: translate3d(-50%);}
+body, html{
+	height: 100%;
+	margin: 0;
+	font-size: 18px;
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	line-height: 1.8em;
+	color:  #669999;
+}
+.pimg1, .pimg2, .pimg3{
+	position: relative;
+	opacity: 0.70;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+/*
+fixed = parallax
+scroll = normal
+*/
+}
+
+.pimg1{
+	background-image: url('../img/tickets.jpg');
+	min-height: 100%;
+}
+.pimg2{
+	background-image: url('../img/visit.jpg');
+	min-height: 400px;
+}
+.pimg3{
+	background-image: url('../img/iceland.jpg');
+	min-height: 400px;
+}
+
+.section {
+	text-align: center;
+	padding: 50px 80px;
+}
+.section-light {
+	background-color: #f4f4f4;
+	color: #666;
+}
+.seciot-dark {
+	background-color: #282e34;
+	color: #ddd;
+}
+.ptext {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	color: #326732;
+	font-size: 27px;
+	letter-spacing: 8px;
+	text-transform: uppercase;
+}
+.ptext .border{
+	background-color: #000000;
+	color: #fff;
+	padding: 20px;
+}
+
+@media (max-width: 568px) {
+	.pim1, .pimg2, .pimg3{
+		background-attachment: scroll;
+	}
+}
